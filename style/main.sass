@@ -1,0 +1,417 @@
+
+@import load.scss
+
+.main__order
+    position: relative
+    width: 100%
+    height: 880px
+    overflow: hidden
+    .main__map
+        position: absolute
+        width: 100%
+        height: 100%
+    .main__form
+        position: relative
+        z-index: 10
+        float: right
+        background-color: rgba(145, 180, 199,0.7 )
+        width: 470px
+        height: 400px
+        margin: 80px 30px 0 0
+        border-radius: 9px
+        transition: all ease 1s
+        @media (max-width: 800px)
+            float: left
+            top: 390px
+            width: 100%
+        .main__button--disable
+            display: none
+            width: 50px
+            @media (max-width: 800px)
+                display: block
+                position: absolute
+                margin-left: calc( 50% - 25px )
+                top: -30px
+        .main__checkbox
+            width: 90%
+            margin-left: 5%
+            margin-top: 20px
+            display: flex
+            justify-content: space-between
+            div
+                width: 130px
+                height: 130px
+                background-color: #fff
+                border-radius: 15px
+                text-align: center
+                cursor: pointer
+                &:hover
+                    background-color: #eee
+                &:active
+                    background-color: #ccc
+            .main__comfort
+                background-image: url("../image/icon/car2.png")
+                background-repeat: no-repeat
+                background-position-x: 12px
+                background-position-y: -15px
+                p
+                    font-size: 20px
+                    &:first-child
+                        margin-top: 60px
+
+            .main__econom
+                background-image: url("../image/icon/car1.png")
+                background-repeat: no-repeat
+                background-position-x: 12px
+                background-position-y: -15px
+                p
+                    font-size: 20px
+                    &:first-child
+                        margin-top: 60px
+
+            .main__lux
+                background-image: url("../image/icon/car3.png")
+                background-repeat: no-repeat
+                background-position-x: 12px
+                background-position-y: -15px
+                p
+                    font-size: 20px
+                    &:first-child
+                        margin-top: 60px
+
+        .main__input,.main__button
+            box-sizing: border-box
+            width: 90%
+            margin-left: 5%
+            margin-top: 20px
+            height: 54px
+            &:first-child
+                margin-top: 30px
+    .main__anchor
+        border-radius: 9px
+        position: relative
+        top: 30px
+        left: calc(50% - 87px)
+        font-size: 20px
+        padding: 10px
+        background-color: rgba(145, 180, 199,0.7 )
+.traffic
+    width: 100%
+    height: 800px
+    background-image: url("../image/traffic.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    @media (max-width: 800px)
+        height: 1000px
+        background-image: none
+        background-color: $navBarHover
+    .traffic-header
+        width: 100%
+        display: block
+        text-align: center
+        background-color: #91B4C7
+        h2
+            color: #fff
+            padding: 10px
+            margin: 0
+            font-size: 48px
+    .traffic-content
+        width: 100%
+        height: 100%
+        .traffic-content-city
+            float: left
+            margin: 30px
+            margin-top: 200px
+            width: 40%
+            height: 400px
+            background-color: rgba(145, 180, 199,0.7 )
+            text-align: center
+            border-radius: 10px
+            @media (max-width: 800px)
+                width: 100%
+                margin: 30px 0 30px 0
+            h3
+                font-size: 36px
+                padding: 10px
+                margin: 0px
+                color: #fff
+        .traffic-content-cityfrom
+            margin-right: 30px
+            margin-top: 50px
+            float: right
+            width: 40%
+            height: 400px
+            background-color: rgba(145, 180, 199,0.7 )
+            text-align: center
+            border-radius: 10px
+            @media (max-width: 800px)
+                margin: 0
+                float: left
+                width: 100%
+            h3
+                font-size: 36px
+                padding: 10px
+                margin: 0px
+                color: #fff
+        table
+            margin-left: 5%
+            width: 90%
+            height: 300px
+            background-color: #FFFFFF
+            font-size: 30px
+            border-collapse: collapse
+            border-radius: 10px
+            @media (max-width: 1200px)
+                font-size: 20px
+            tr
+                border-bottom: 1pt solid #9EBBCB
+.work
+    width: 100%
+    height: 800px
+    background-image: url("../image/work.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    @media (max-width: 800px)
+        height: 940px
+        background-color: #95C8E3
+        background-image: none
+    .work-header
+        width: 100%
+        display: block
+        text-align: center
+        background-color: #91B4C7
+        h2
+            color: #fff
+            padding: 10px
+            margin: 0
+            font-size: 48px
+    .work-content
+        width: 100%
+        height: 100%
+        margin-top: 40px
+        .work-content-adventuries
+            float: left
+            margin-left: 20px
+            width: 50%
+            height: 500px
+            text-align: center
+            @media (max-width: 800px)
+                width: 100%
+                margin-left: 10px
+                height: 300px
+            div
+                float: left
+            h2
+                color: white
+                margin: 25px
+                font-size: 40px
+                border-bottom: 5px solid #fff
+            @media (max-width: 1200px)
+                font-size: 28px
+            @media (max-width: 800px)
+                display: none
+            h3
+                color: white
+                position: relative
+                top: -46px
+                font-size: 40px
+                display: inline
+            @media (max-width: 1200px)
+                font-size: 28px
+            @media (max-width: 800px)
+                margin: 10px
+                color: #000
+        .work-content-form
+            float: right
+            width: 40%
+            height: 500px
+            margin-right: 20px
+            text-align: center
+            @media (max-width: 800px)
+                width: 100%
+                height: 300px
+                margin-right: 0
+                margin-top: 130px
+            h2
+                font-size: 40px
+                color: #fff
+                @media (max-width: 1200px)
+                    font-size: 27px
+                @media (max-width: 800px)
+                    display: none
+            form
+                border-radius: 15px
+                height: 400px
+                background-color: rgba(145, 180, 199,0.9 )
+                button
+                    width: 50%
+                    height: 80px
+                    margin-top: 20px
+                    border-radius: 10px
+                input
+                    width: 90%
+                    margin-left: 1%
+                    box-sizing: border-box
+                    border-radius: 10px
+                    margin-top: 20px
+                    height: 70px
+.review
+    width: 100%
+    height: 650px
+    background-image: url("../image/review.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    @media (max-width: 800px)
+        background-image: none
+        background-color: $navBarHover
+    .review-header
+        width: 100%
+        display: block
+        text-align: center
+        background-color: #91B4C7
+        h2
+            color: #fff
+            padding: 10px
+            margin: 0
+            font-size: 48px
+    .review-content
+        width: 100%
+        height: 100%
+
+        .slider-prev
+            position: relative
+            float: left
+            top: -250px
+        .slider-next
+            position: relative
+            float: right
+            top: -250px
+        .slider
+            margin-top: 40px
+            margin-left: 150px
+            width: calc(100% - 300px)
+            overflow: hidden
+            @media (max-width: 800px)
+                margin-left: 80px
+                width: calc(100% - 160px)
+            .slider-line
+                width: 200%
+                display: flex
+                position: relative
+                transition: all ease 1s
+                @media (max-width: 1200px)
+                    width: 300%
+                @media (max-width: 800px)
+                    width: 600%
+                .slider-line-item
+                    border-radius: 10px
+                    margin: 20px
+                    width: 30%
+                    background-color: rgba(72, 117, 142 ,0.7 )
+                    @media (max-width: 800px)
+                        width: 100%
+                    .user
+                        margin: 10px
+                        img
+                            width: 40%
+                        h2
+                            position: relative
+                            font-size: 30px
+                            top: -70px
+                            margin-left: 5%
+                            display: inline
+                            @media (max-width: 1200px)
+                                font-size: 25px
+                                top: -60px
+                        .stars
+                            position: relative
+                            top: -50px
+                            margin-left: 46%
+                            display: inline-block
+                            width: 50%
+                            img
+                                width: 16%
+                    p
+                        margin: 10px
+                        padding: 10px
+                        border-radius: 10px
+                        font-size: 30px
+                        background-color: rgba(201, 217, 225 ,0.7 )
+                        @media (max-width: 1200px)
+                            font-size: 25px
+.contacts
+    width: 100%
+    height: 520px
+    background-image: url("../image/contact.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    @media (max-width: 800px)
+        background-image: none
+        background-color: $navBarHover
+        height: 500px
+    .contacts-header
+        width: 100%
+        display: block
+        text-align: center
+        background-color: #91B4C7
+        h2
+            color: #fff
+            padding: 10px
+            margin: 0
+            font-size: 48px
+    .contacts-content
+        width: 90%
+        height: calc(100% - 190px)
+        margin-top: 40px
+        margin-left: calc(5% - 20px)
+        padding: 20px
+        background-color: rgba(173, 195, 207 ,0.7 )
+        border-radius: 10px
+        @media (max-width: 800px)
+            background-color: $navBarHover
+            width: 100%
+            margin-left: 0
+            padding-left: 0
+            margin-top: 0
+        .contacts-content-text-right
+            float: right
+            width: 50%
+            @media (max-width: 800px)
+                width: 100%
+            p
+                float: right
+                margin-top: 5%
+                font-size: 35px
+                color: #fff
+                @media (max-width: 800px)
+                    width: 100%
+                    font-size: 24px
+                    margin-top: 20px
+                    margin-left: 10px
+                    float: left
+                    color: #000
+            .social
+                display: inline-block
+                float: right
+                text-align: center
+                @media (max-width: 800px)
+                    width: 100%
+                    background-color: $divBackgroundColor
+                img
+                    width: 20%
+                    @media (max-width: 800px)
+                        width: 10%
+        .contacts-content-text-left
+            float: left
+            width: 50%
+            @media (max-width: 800px)
+                width: 100%
+            p
+                margin-top: 5%
+                font-size: 35px
+                color: #fff
+                @media (max-width: 800px)
+                    margin-top: 40px
+                    font-size: 24px
+                    margin-left: 10px
+                    color: #000

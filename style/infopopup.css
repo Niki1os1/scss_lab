@@ -1,0 +1,87 @@
+#notice_popup .modal-content {
+  padding: 0;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  line-height: 1.6em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#notice_popup p {
+  margin: 0;
+}
+
+.notice-popup--content {
+  display: table;
+}
+
+.notice-popup--content .left {
+  display: table-cell;
+  width: 305px;
+  padding: 30px;
+  vertical-align: top;
+}
+
+.notice-popup--content .left img {
+  width: 345px;
+}
+
+.notice-popup--content .right {
+  display: table-cell;
+  background: #1d1d1d;
+  width: 100%;
+  padding: 30px;
+  vertical-align: top;
+  color: #fff;
+  text-align: center;
+}
+
+.notice-popup--picture-text {
+  width: 345px;
+  color: #fff;
+  text-shadow: 0 0 0 #666, 0 0 5px #666;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  background: #00e196;
+}
+
+.notice-popup--left-text {
+  padding-top: 5px;
+}
+
+.notice-popup--right-text {
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+a.notice-popup--button {
+  display: inline-block;
+  border: 1px solid #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  width: 250px;
+  text-transform: uppercase;
+}
+
+#notice_popup .close {
+  background: url(/image/close_circled_white.png) 0 0 no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  opacity: 1;
+}
+
+#notice_popup.black-close-btn .close {
+  background-image: url(/image/close_circled_black.png);
+}
+
+.notice-popup--right-text .mobile {
+  display: none;
+}

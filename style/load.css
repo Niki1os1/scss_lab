@@ -1,0 +1,88 @@
+.main__load {
+  background-color: #ffffff;
+  border-radius: 20px 20px 0 0;
+}
+
+.main__load .main__container {
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.main__load .main__container .main__text {
+  font-weight: 400;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.76);
+  position: relative;
+  display: inline;
+  top: -25px;
+}
+
+.main__load .main__container .main__image {
+  display: inline;
+  text-align: center;
+  padding: 0;
+  width: 70%;
+  height: 10px;
+}
+
+.main__load .main__container .main__check {
+  text-align: left;
+  position: relative;
+  padding-top: 2%;
+  padding-bottom: 10%;
+  padding-left: 23%;
+  height: 5%;
+}
+
+.main__load .main__container .main__check--label {
+  color: #6747E5;
+}
+
+.main__load .main__container .main__input {
+  text-align: left;
+  position: relative;
+  padding-top: 20%;
+  padding-left: 18%;
+}
+
+.main__load .main__container .main__input .main__image--bel {
+  text-align: left;
+  width: 5%;
+  margin: 0;
+  display: inline-block;
+}
+
+.main__load .main__container .main__input .main__in {
+  border: none;
+  outline: none;
+  width: 40%;
+  height: 10%;
+}
+
+.main__load .main__container .main__button {
+  display: inline;
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+  width: 70%;
+  height: 40px;
+  background-color: #6747E5;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 150%;
+}
+
+.main__load .main__container .main__button--text {
+  cursor: pointer;
+  display: inline;
+  position: relative;
+  text-align: center;
+  width: 120px;
+  margin-top: 40%;
+  padding-bottom: 4%;
+  background-color: #ffffff;
+  border: none;
+  color: #6747E5;
+  font-size: 90%;
+}

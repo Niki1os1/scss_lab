@@ -1,0 +1,250 @@
+.new-popup {
+    z-index: 9999;
+}
+
+.new-popup .modal-dialog {
+    max-width: none !important;
+}
+
+.new-popup .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    max-width: 355px;
+    min-height: 300px;
+    border-radius: 12px;
+    padding: 50px 15px 15px 15px;
+    margin: 0 auto;
+}
+
+#modalProfileImage.new-popup .modal-content {
+    max-width: none;
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-popup .modal-title,
+.new-popup .modal-message {
+    font-family: 'SF Pro Rounded';
+    font-size: 18px;
+    word-break: break-word;
+}
+
+.new-popup .modal-title {
+    font-weight: bold;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 12px;
+    color: #000000;
+    word-break: break-word;
+}
+
+.new-popup .modal-message {
+    font-weight: 500;
+    text-align: center;
+}
+
+.new-popup .buttons {
+    width: 100%;
+}
+
+.new-popup .button {
+    width: 100%;
+    background-color: #6747E5;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #FFFFFF !important;
+}
+
+.new-popup .button:nth-child(2) {
+    background-color: #fff;
+    border: 2px solid #6747E5;
+    margin-bottom: 0;
+    color: #6747E5 !important;
+}
+
+.new-popup .close {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-image: url('/image/close_icon.png?v=3');
+    background-size: cover;
+    margin: 0 !important;
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+#popupBrandbox {
+    top: 0;
+    width: auto;
+    border-radius: 0;
+    margin: auto;
+    overflow-y: auto;
+}
+
+.brandbox-popup .modal-content {
+    font-family: 'SF Pro Rounded';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+}
+
+.brandbox-popup .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: none !important;
+    height: 100%;
+    margin: 0;
+}
+
+.brandbox-popup-logo {
+    width: 175px;
+    height: 75px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+
+.brandbox-popup-title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.434118px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.brandbox-popup-descr {
+    max-width: 380px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.434118px;
+    margin-bottom: 30px;
+    color: #8F8F8F;
+}
+
+.brandbox-popup-btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.brandbox-popup-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 125px;
+    background-color: #6747E5;
+    border-radius: 24px;
+    padding: 25px 40px;
+    cursor: pointer;
+}
+
+.brandbox-popup-btn:first-child {
+    margin-right: 10px;
+}
+
+.brandbox-popup-btn-text {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.434118px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.brandbox-popup-btn-sale {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.434118px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.brandbox-popup-img {
+    width: 418px;
+    height: 249px;
+}
+
+@media (max-height: 730px) {
+    .brandbox-popup .modal-dialog {
+        height: 730px;
+    }
+    .brandbox-popup .modal-content {
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+@media (max-width: 991px) {
+    .brandbox-popup .modal-content,
+    .brandbox-popup .modal-dialog {
+        width: 100vw;
+        max-width: 100vw;
+    }
+    .brandbox-popup .modal-content {
+        min-height: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .brandbox-popup-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .brandbox-popup-descr {
+        font-size: 14px;
+    }
+    .brandbox-popup-btn-text {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .brandbox-popup-btn {
+        width: 168px;
+        height: 168px;
+        padding: 60px 20px;
+    }
+    .brandbox-popup-title,
+    .brandbox-popup-descr,
+    .brandbox-popup-btns {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .brandbox-popup-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 350px) {
+    .brandbox-popup-btn {
+        width: 49%;
+    }
+}
